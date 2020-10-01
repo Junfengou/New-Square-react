@@ -1,0 +1,130 @@
+.about {
+	height: 50vh;
+	/* border: solid red; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* background-color: #f1f1f1; */
+	background-color: rgb(28, 27, 27);
+}
+
+.about__container {
+	/* border: solid blue; */
+	width: 50%;
+	height: 80%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container__left {
+	height: 80%;
+	max-width: 40%;
+	/* min-width: 35%; */
+	/* border: solid red; */
+}
+
+.container__left > img {
+	height: 100%;
+	object-fit: contain;
+	/* margin-left: 40%; */
+}
+
+.container__right {
+	height: 100%;
+	max-width: 500px;
+	min-width: 200px;
+	/* border: solid pink; */
+	display: flex;
+	/* justify-content: center; */
+	align-items: center;
+	color: white;
+	padding-left: 2%;
+	flex-direction: column;
+}
+
+.container__right > h1 {
+	margin-top: 20%;
+	margin-left: 2%;
+	color: rgb(252, 196, 188);
+}
+
+.container__right > h5 {
+	margin-top: 2%;
+	margin-left: 2%;
+}
+
+@media screen and (max-width: 1200px) {
+	.about__container {
+		/* border: solid blue; */
+		width: 50%;
+		height: 80%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.container__left {
+		height: 80%;
+		max-width: 40%;
+		/* min-width: 35%; */
+		/* border: solid red; */
+	}
+
+	.container__right {
+		height: 100%;
+		max-width: 500px;
+		min-width: 200px;
+		/* border: solid pink; */
+		display: flex;
+		/* justify-content: center; */
+		align-items: center;
+		color: white;
+		padding-left: 2%;
+		flex-direction: column;
+	}
+}
+
+@media screen and (max-width: 1100px) {
+	.about__container {
+		/* border: solid blue; */
+		width: 50%;
+		height: 80%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	.container__left {
+		max-height: 40%;
+		width: 50%;
+		/* min-width: 35%; */
+		/* border: solid red; */
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.container__right {
+		height: 100%;
+		max-width: 500px;
+		min-width: 200px;
+		/* border: solid pink; */
+		display: flex;
+		/* justify-content: center; */
+		align-items: center;
+		color: white;
+		padding-left: 2%;
+		flex-direction: column;
+	}
+
+	.container__right > h1 {
+		font-size: 1.2rem;
+		color: rgb(252, 196, 188);
+	}
+
+	.container__right > h5 {
+		font-size: 0.7rem;
+	}
+}

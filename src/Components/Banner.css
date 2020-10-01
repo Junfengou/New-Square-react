@@ -1,0 +1,74 @@
+.banner {
+	height: 70vh;
+	max-width: 100;
+	background: url(../Images/coffee.jpg) no-repeat center center fixed;
+	min-height: 100%;
+	background-size: cover;
+	background-position: center;
+	margin: 0;
+	padding: 0;
+	/* border: solid blue; */
+}
+
+.overlay {
+	background: #0000008a;
+	height: 100%;
+	left: 0;
+	z-index: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* border: solid red; */
+}
+
+.contents {
+	/* border: solid gold; */
+	height: 75%;
+	width: 60%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-bottom: 2%;
+}
+
+.content__top {
+	/* border: solid red; */
+	width: 60%;
+	height: 40%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.content__top > img {
+	/* border: solid red; */
+	height: 100%;
+	object-fit: contain;
+}
+
+.content__bottom {
+	/* border: solid blue; */
+	width: 60%;
+	height: 40%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.content__bottom > img {
+	width: 100%;
+	object-fit: contain;
+}
+
+@media screen and (max-width: 960px) {
+	.content__bottom {
+		/* border: solid red; */
+		width: 100%;
+	}
+
+	.content__bottom > img {
+		height: 100%;
+		object-fit: contain;
+	}
+}
